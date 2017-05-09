@@ -13,3 +13,7 @@ function HotelGuest(fullName, age, gender, country, checkInDay, checkOutDay){
         return this.days;
     };
 }
+
+// A Guest
+firstGuest = new HotelGuest("Alhajiji", 34, "Male", "Togo", 1, 9);
+firstGuest.daysLeft();
