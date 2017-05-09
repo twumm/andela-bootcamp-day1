@@ -7,4 +7,9 @@ function HotelGuest(fullName, age, gender, country, checkInDay, checkOutDay){
   this.country = country;
   this.checkInDay = checkInDay;
   this.checkOutDay = checkOutDay;
+
+  this.daysLeft = function () {
+        this.days = this.checkOutDay - this.checkInDay;
+        return this.days;
+    };
 }
